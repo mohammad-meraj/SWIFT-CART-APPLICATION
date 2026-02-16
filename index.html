@@ -54,10 +54,10 @@
     </header>
     <!-- hero section -->
      <section>
-        <div class="relative h-[70vh] bg-[url('Assets/banner-image.png')] bg-cover bg-center">
+        <div class="relative md:h-[70vh] lg:h-[75vh] xl:h-[70vh] bg-[url('Assets/banner-image.png')] bg-cover bg-center">
   <div class="absolute inset-0 bg-black/60"></div>
 
-  <div class="relative z-50 p-2 pt-30 space-y-5 md:pl-25 md:pt-35">
+  <div class="relative my-auto z-50 p-2 pt-30 space-y-5 md:pl-25 md:pt-35">
       <h2 class="text-3xl md:text-5xl text-white font-bold">Best Collection For You</h2>
       <p class="text-base md:text-lg text-gray-300 font-semibold">Discover the latest trends in fashion, electronics, and more. Shop with <br>confidence and style at SwiftCart</p>
       <a href="" class="btn btn-primary">Shop Now</a>
@@ -96,11 +96,46 @@
       <!-- Trending section -->
        <h2 class="text-4xl text-center font-bold py-5 pt-10">Trending Now</h2>
        <section>
-        <div id="trending-container" class="mx-auto p-10 my-5 grid grid-cols-1 gap-8 md:flex-wrap lg:grid-cols-3 md:w-10/12">
+        <div id="trending-container" class="mx-auto p-5 md:p-10 my-5 grid grid-cols-1 gap-8 lg:grid-cols-3 md:w-10/12">
             
         </div>
        </section>
+       <!-- footer section -->
+        <footer class="bg-blue-950 text-white">
+            <div class="w-10/12 mx-auto py-10 md:p-10 my-10 flex flex-col md:flex-row justify-start md:justify-center gap-20">
+                <div class="">
+                    <h2 class="text-3xl font-bold text-blue-600">SwiftCart</h2>
+                    <p class="text-gray-300 font-semibold text-sm pt-4">Your one-stop shop for all your fashion and lifestyle needs.Quality products, fast delivary, and excellent support.</p>
+                </div>
+                <div class="">
+                    <h2 class="text-xl font-bold text-gray-400 pb-5">QUICK LINKS</h2>
+                    <ul class="font-semibold text-sm space-y-2 text-gray-300">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h2 class="text-xl font-bold text-gray-400 pb-5">SUPPORT</h2>
+                    <ul class="font-semibold text-sm space-y-2 text-gray-300">
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Shipping</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <h2 class="text-xl font-bold text-gray-400 pb-5">SUBSCRIBE TO OUR NEWSLETTER</h2>
+                    <p class=" font-semibold text-sm space-y-2 text-gray-300">The latest news, articles, and resources, sent to your inbox weekly.</p>
+                    <div class="flex flex-wrap mt-4 gap-2">
+                        <input class="rounded pl-3 p-1" placeholder="Enter Your Email"  type="email" name="" id=""> <a class="btn btn-primary" href="" class="">Subscribe</a>
+                    </div>
+                </div>
 
+
+            </div>
+        </footer>
        <!-- java-script -->
         <script src="index.js"></script>
 </body>

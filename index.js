@@ -22,7 +22,7 @@ const DisplayTrand=(Data)=>{
                 </div>
                 <h2 class="">description</h2>
                 <h2 class=""><i class="fa-solid fa-dollar-sign"></i>price</h2>
-                <div class="flex justify-between">
+                <div class="flex flex-wrap gap-1 justify-between">
                     <a href="" class="btn btn-primary md:px-8"><i class="fa-regular fa-eye"></i>detail</a>
                     <a href="" class="btn btn-primary md:px-10"><i class="fa-solid fa-cart-shopping"></i>add</a>
                 </div>
