@@ -7,6 +7,17 @@ const loadTrand=()=>{
 }
 
 let allProducts = [];
+//spiner
+const manageSpinner=(status)=>{
+    if(status==true){
+        document.getElementById("spinner").classList.remove("hidden");
+        document.getElementById("Product-container").classList.add("hidden")
+    }
+    else{
+        document.getElementById("spinner").classList.add("hidden");
+        document.getElementById("Product-container").classList.remove("hidden")
+    }
+}
 
 const loadProduct = async () => {
     const res = await fetch(url);
@@ -14,6 +25,7 @@ const loadProduct = async () => {
 
     allProducts = data;        
     DisplayCategories(data);  
+    manageSpinner(true);
     DisplayProducts(data); 
 };
 
@@ -105,6 +117,7 @@ const DisplayCategories = (products) => {
 
         productContainer.appendChild(Catbtn);
     });
+    manageSpinner(false)
 };
 
 const DisplayProducts = (products) => {
@@ -137,6 +150,7 @@ const DisplayProducts = (products) => {
 
         container.appendChild(card);
     });
+    manageSpinner(false)
 };
 
 
